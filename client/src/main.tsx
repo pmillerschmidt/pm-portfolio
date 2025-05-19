@@ -13,7 +13,6 @@ import MusicDetailPage from "./pages/MusicDetailPage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 
-console.log("🚀 React entry point loaded");
 
 function App() {
   return (

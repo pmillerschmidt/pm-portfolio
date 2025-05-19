@@ -4,6 +4,8 @@
 // 3. Supported formats: JPG, PNG, WebP
 // 4. Example path: "/images/your-project-name.jpg"
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 export const publications = [];
 export const researchInterests = [];
 
@@ -11,7 +13,7 @@ export const musicProjects = [
   {
     title: "Discography",
     summary: "Original works, collaborations, and remixes",
-    image: "/images/visual-scoring.jpg",
+    image: `${BASE_URL}images/visual-scoring.jpg`,
     technologies: ["Ableton Live", "Logic Pro", "Rekordbox"],
     detailedDescription: `I began producing as a sophomore at Yale and it quickly became one of the greatest joys of my life. I typically make House or EDM, but enjoy exploring different sounds and genres. My favorite part of writing music is collaboration, and I am lucky to be friends with some amazing musicians. I have worked with acts like <a href="https://open.spotify.com/artist/1OcU1uVtqF9umURdShNIwP" target="_blank" rel="noopener noreferrer" class="text-primary-500 font-medium no-underline hover:underline hover:decoration-2 hover:text-primary-400 transition-all duration-200">Balt Lora</a>, <a href="https://open.spotify.com/artist/3QCB7sHyeE8BM8G5JqA1Z4" target="_blank" rel="noopener noreferrer" class="text-primary-500 font-medium no-underline hover:underline hover:decoration-2 hover:text-primary-400 transition-all duration-200">Wacomo</a>, and <a href="https://open.spotify.com/artist/1lhIL1YVgF6X1I8IMluKZi" target="_blank" rel="noopener noreferrer" class="text-primary-500 font-medium no-underline hover:underline hover:decoration-2 hover:text-primary-400 transition-all duration-200">PJ Frantz</a>. Below is a selection of some originals (all collaborations with my friend <a href="https://open.spotify.com/artist/7jszfbhgcYuNuQt2QR8HCy" target="_blank" rel="noopener noreferrer" class="text-primary-500 font-medium no-underline hover:underline hover:decoration-2 hover:text-primary-400 transition-all duration-200">Abby Walker</a>) and remixes. Eager to perform and share my love for dance music, I started to DJ in my senior year. I've played in many dingy basements, but also at larger venues like Elm City Tap House and Toads Place in New Haven.`,
     originalWorks: [
@@ -56,7 +58,7 @@ export const musicProjects = [
     summary: "Musical machines and probabilistic composition",
     detailedDescription:
       "After taking a class on electronic dance music, I was hungry to dive deeper into this intersection of interests. The next few years, I took several classes in computer music, including algorithmic music, sound synthesis, and electronic instrument design. In these classes I learned about the history of the field and how to build computer music systems in Max/MSP and SuperCollider. Below are some samplings from a project I did for algorithmic music. I built mealy machines and Markov models to extract stastical information from musical data that was then used to generate probabalistic music sequences.",
-    image: "/images/computer-music.png",
+    image: `${BASE_URL}images/computer-music.png`,
     githubUrl: "https://github.com/pmillerschmidt/Musical-Machines",
     technologies: ["SuperCollider", "Markov Model", "Max/MSP"],
     originalWorks: [
@@ -83,7 +85,7 @@ export const musicProjects = [
     detailedDescription: `
     Music classes at Yale complemented my analytical engineering coursework, providing an outlet for creative exploration. After taking introductory theory courses my first year, I took nearly every course I was proficient enough to handle. Some of my favorites include Where Music Theories Collide, American Neighborhood Musics, and Gamelan Ensemble. 
     Below is a visual score I wrote with my friend and collaborator <a href="https://open.spotify.com/artist/1OcU1uVtqF9umURdShNIwP" target="_blank" rel="noopener noreferrer" class="text-primary-500 font-medium no-underline hover:underline hover:decoration-2 hover:text-primary-400 transition-all duration-200">Baltazar Lora</a> for our composition seminar.`,
-    image: "/images/theory.jpg",
+    image: `${BASE_URL}images/theory.jpg`,
     videoUrl: "https://www.youtube.com/embed/W0jj0Gkzsc8",
     isYoutubeVideo: true,
     technologies: ["Theory", "Film Scoring", "Composition"],
@@ -94,7 +96,7 @@ export const projects = [
   {
     title: "GrooveBlocks",
     description: "Combinatory blocks for composition-based learning",
-    image: "/images/grooveblocks.png",
+    image: `${BASE_URL}images/grooveblocks.png`,
     technologies: ["Java", "Audio Processing", "C++"],
     demoUrl: "https://grooveblocks.mit.edu",
     projectUrl: "https://grooveblocks.mit.edu",
@@ -129,7 +131,7 @@ export const projects = [
   {
     title: "MelGen",
     description: "Generative melodic/harmonic LSTM model",
-    image: "/images/melgen.png",
+    image: `${BASE_URL}images/melgen.png`,
     technologies: ["Python", "TensorFlow", "Machine Learning"],
     demoUrl: "https://melgen.mit.edu/demo",
     githubUrl: "https://github.com/pmillerschmidt/MelGen",
@@ -156,7 +158,7 @@ Music generation with machine learning poses unique challenges due to the high d
   {
     title: "Artiphon Music Logic",
     description: "Markov Melody generator for embedded systems",
-    image: "/images/midi.webp",
+    image: `${BASE_URL}images/midi.webp`,
     technologies: ["C++", "MIDI", "Embedded Systems"],
     githubUrl: "https://github.com/pmillerschmidt/Artiphon-Music-Logic",
     detailedDescription: `
@@ -197,7 +199,7 @@ Music generation with machine learning poses unique challenges due to the high d
   {
     title: "Q-tar",
     description: "Reinforcement learning for melody generation",
-    image: "/images/Qtar.png",
+    image: `${BASE_URL}images/Qtar.png`,
     technologies: ["PyTorch", "Reinforcement Learning", "Flask"],
     demoUrl: "https://neural-music.example.com",
     projectUrl: "https://qtar.mit.edu",
@@ -260,7 +262,7 @@ Music generation with machine learning poses unique challenges due to the high d
   {
     title: "nextChord",
     description: "Chord progression neural network",
-    image: "/images/next-chord.png",
+    image: `${BASE_URL}images/next-chord.png`,
     technologies: ["PyTorch", "Long Short-Term Memory", "React"],
     demoUrl: "https://pmillerschmidt.github.io/ChordCompass/",
     projectUrl: "https://pmillerschmidt.github.io/ChordCompass/",
@@ -285,7 +287,7 @@ Music generation with machine learning poses unique challenges due to the high d
   {
     title: "Chess Engine Design",
     description: "Minimax chess engine with advanced heuristics",
-    image: "/images/minimax.png",
+    image: `${BASE_URL}images/minimax.png`,
     technologies: ["Python", "Alpha-Beta Pruning", "Tree Search"],
     demoUrl: "https://pmillerschmidt.github.io/Chess-Alpha-Beta/",
     projectUrl: "https://pmillerschmidt.github.io/Chess-Alpha-Beta/",
