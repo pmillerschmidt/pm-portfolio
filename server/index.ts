@@ -70,7 +70,7 @@ app.use((req, res, next) => {
   }
 
   // Use port 5000 consistently
-  const PORT = 5000;
+  const PORT = 3001;
   server.listen(PORT, "0.0.0.0", () => {
     log(`serving on port ${PORT}`);
   });
