@@ -6,6 +6,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Github, Linkedin, Download } from "lucide-react";
 import { useState } from "react";
 
+const contactBackground = `${import.meta.env.BASE_URL}images/contact-background.png`;
+
 export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -23,7 +25,7 @@ export function Contact() {
     <section className="relative py-20 min-h-screen flex items-center">
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/contact-background.png"
+          src={contactBackground}
           alt="Contact Background"
           className="w-full h-full object-cover transform scale-105 transition-transform duration-[20s] hover:scale-110"
           style={{
@@ -62,8 +64,8 @@ export function Contact() {
                     From starting a maker space in high school to developing
                     musical toys at Yale, I'm driven to use technology to help
                     people learn through play. Since discovering electronic
-                    music production in college, I’ve been on a mission to build
-                    the instruments I wish I’d had growing up. With my
+                    music production in college, I've been on a mission to build
+                    the instruments I wish I'd had growing up. With my
                     background in machine learning, electronic instrument
                     design, and education, I want to create the next generation
                     of instruments and reshape how we learn music.

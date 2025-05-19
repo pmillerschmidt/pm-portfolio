@@ -12,6 +12,8 @@ import { projects } from "../lib/constants";
 import { ExternalLink, Loader2 } from "lucide-react";
 import { Link } from "wouter";
 
+const projectsInverted = `${import.meta.env.BASE_URL}images/projects-inverted.jpg`;
+
 export function Projects() {
   const [visibleProjects, setVisibleProjects] = useState(6);
   const [isLoading, setIsLoading] = useState(false);
@@ -49,7 +51,7 @@ export function Projects() {
         {/* Background that covers entire section */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img
-            src="/images/projects-inverted.jpg"
+            src={projectsInverted}
             alt="Projects Background"
             className="w-full h-full object-cover"
           />

@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
 
+const projectsBackground = `${import.meta.env.BASE_URL}images/projects-background.png`;
+
 export function Hero() {
   const [isLoading, setIsLoading] = useState(true);
   const { toast } = useToast();
@@ -19,7 +21,7 @@ export function Hero() {
       {/* Background Container */}
       <div className="absolute inset-0 z-0">
         <motion.img
-          src="/images/projects-background.png"
+          src={projectsBackground}
           alt="Creative Technology Background"
           className="absolute inset-0 w-full h-full object-cover transform scale-105 transition-transform duration-[20s] hover:scale-110"
           initial={{ opacity: 0 }}

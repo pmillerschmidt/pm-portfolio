@@ -12,6 +12,8 @@ import { musicProjects } from "../lib/constants";
 import { ExternalLink, Loader2 } from "lucide-react";
 import { Link as WouterLink } from "wouter";
 
+const musicBackground = `${import.meta.env.BASE_URL}images/music-background.png`;
+
 export function Music() {
   const [visibleProjects, setVisibleProjects] = useState(6);
   const [isLoading, setIsLoading] = useState(false);
@@ -42,7 +44,7 @@ export function Music() {
     <section id="music" className="relative py-4 min-h-screen flex items-center -mt-24">
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/music-background.png"
+          src={musicBackground}
           alt="Music Technology Background"
           className="w-full h-full object-cover"
         />

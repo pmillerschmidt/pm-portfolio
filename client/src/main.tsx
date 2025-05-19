@@ -4,7 +4,7 @@ import "./index.css";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "./lib/queryClient";
 import { Toaster } from "@/components/ui/toaster";
-import { Route, Switch } from "wouter";
+import { Router, Route, Switch } from "wouter";
 import Home from "./pages/Home";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
 import ProjectsPage from "./pages/ProjectsPage";
@@ -13,17 +13,21 @@ import MusicDetailPage from "./pages/MusicDetailPage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 
+console.log("🚀 React entry point loaded");
+
 function App() {
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/projects/:id" component={ProjectDetailPage} />
-      <Route path="/projects" component={ProjectsPage} />
-      <Route path="/music" component={MusicPage} />
-      <Route path="/music/:id" component={MusicDetailPage} />
-      <Route path="/contact" component={ContactPage} />
-      <Route path="/about" component={AboutPage} />
-    </Switch>
+    <Router base="/pm-portfolio">
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/projects/:id" component={ProjectDetailPage} />
+        <Route path="/projects" component={ProjectsPage} />
+        <Route path="/music" component={MusicPage} />
+        <Route path="/music/:id" component={MusicDetailPage} />
+        <Route path="/contact" component={ContactPage} />
+        <Route path="/about" component={AboutPage} />
+      </Switch>
+  </Router>
   );
 }
 

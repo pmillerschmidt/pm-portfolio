@@ -21,10 +21,11 @@ export default defineConfig({
       "@db": path.resolve(__dirname, "db"),
     },
   },
+  base: '/pm-portfolio/',
   root: path.resolve(__dirname, "client"),
   build: {
     outDir: path.resolve(__dirname, "dist"),
     emptyOutDir: true,
   },
-  base: '/pm-portfolio/'
+  
 });
