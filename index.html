@@ -54,20 +54,28 @@
       name="description"
       content="Portfolio showcasing research and projects in human-computer interaction, artificial intelligence, and interactive media at MIT Media Lab"
     />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- ✅ Leave base-relative -->
+    <link rel="icon" type="image/svg+xml" href="/pm-portfolio/favicon.svg" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="preload" as="image" href="/pm-portfolio/images/projects-background.png" />
-    <link rel="preload" as="image" href="/pm-portfolio/images/projects-inverted.jpg" />
-    <link rel="preload" as="image" href="/pm-portfolio/images/music-background.png" />
-    <script type="module" crossorigin src="/pm-portfolio/assets/index-CpVZ5Ax4.js"></script>
+
+    <!-- ✅ Leave these base-relative too -->
+    <!-- <link rel="preload" as="image" href="/images/projects-background.png" />
+    <link rel="preload" as="image" href="/images/projects-inverted.jpg" />
+    <link rel="preload" as="image" href="/images/music-background.png" /> -->
+    <script type="module" crossorigin src="/pm-portfolio/assets/index-mMB5G1ow.js"></script>
     <link rel="stylesheet" crossorigin href="/pm-portfolio/assets/index-DtTHoB4s.css">
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- ✅ Leave as-is; Vite knows how to resolve this -->
   </body>
 </html>
