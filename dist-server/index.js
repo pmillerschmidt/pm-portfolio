@@ -57,9 +57,10 @@ var vite_config_default = defineConfig({
   },
   root: path.resolve(__dirname2, "client"),
   build: {
-    outDir: path.resolve(__dirname2, "dist/public"),
+    outDir: path.resolve(__dirname2, "dist"),
     emptyOutDir: true
-  }
+  },
+  base: "/pm-portfolio/"
 });
 
 // server/vite.ts
