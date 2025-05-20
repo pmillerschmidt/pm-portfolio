@@ -24,7 +24,7 @@ export function Navigation() {
     >
       <nav className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-primary via-purple-500 to-pink-500">
+          <Link href={`${import.meta.env.BASE_URL}`} className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-primary via-purple-500 to-pink-500">
             Home
           </Link>
 

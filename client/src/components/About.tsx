@@ -43,13 +43,10 @@ export function About() {
                   Paul Miller-Schmidt
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  As a tinkerer who discovered music later in life, I aim to
-                  build the tools I wish I'd had growing up. With a background in computer
-                  science, machine learning, and electronic instrument design, I
-                  want to create adaptive systems that make musical expression
-                  more accessible. From building a makerspace in high school to
-                  developing musical toys at Yale, I'm driven to use technology
-                  to help people learn through play.
+                As a Machine Learning Engineer at Mathpix, I specialized in OCR and segmentation model pipelines. My work covered data handling, model training, and performance optimization. I designed synthetic data systems to improve multi-domain performance and developed automatic annotation tools that increased annotator productivity by 30%.
+                </p>
+                <p className="text-gray-600 mb-6">
+                Previously, I interned as a Software Engineer at Artiphon, a modern instrument startup, where I designed MIDI communication optimizations. Before that, I interned at Gravitate AI, where I developed ML tools for customers, including an NLP matching algorithm to assign patients to providers.
                 </p>
                 <div className="space-y-4">
                   <div>

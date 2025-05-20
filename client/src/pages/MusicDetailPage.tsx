@@ -51,15 +51,16 @@ export default function MusicDetailPage() {
       <div className="relative z-10 min-h-screen">
         <div className="container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto">
-            <Link href="/#music">
-                  <Button
-                    variant="outline"
-                    className="mb-8 bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 transition-all duration-300"
-                  >
-                    <ArrowLeft className="w-4 h-4 mr-2" />
-                    Back to Music
-                  </Button>
-                </Link>
+            <Button
+              variant="outline"
+              className="mb-8 bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 transition-all duration-300"
+              onClick={() => {
+                window.location.href = `${import.meta.env.BASE_URL}`;
+              }}
+            >
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back to Home
+            </Button>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -164,7 +165,7 @@ export default function MusicDetailPage() {
                     )}
 
                     {/* Video Section - Moved to the end */}
-                    {project.videoUrl && (
+                    {/* {project.videoUrl && (
                       <div className="mt-8">
                         <h2 className="text-2xl font-semibold text-white mb-4">
                           Project Demo
@@ -196,7 +197,7 @@ export default function MusicDetailPage() {
                           )}
                         </div>
                       </div>
-                    )}
+                    )} */}
 
                     {/* Performance Image Section */}
                     {project.performanceImage && (

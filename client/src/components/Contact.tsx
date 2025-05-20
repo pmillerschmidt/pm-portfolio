@@ -61,15 +61,11 @@ export function Contact() {
                     About Me
                   </h3>
                   <p className="text-white/80 mb-6 leading-relaxed">
-                    From starting a maker space in high school to developing
-                    musical toys at Yale, I'm driven to use technology to help
-                    people learn through play. Since discovering electronic
-                    music production in college, I've been on a mission to build
-                    the instruments I wish I'd had growing up. With my
-                    background in machine learning, electronic instrument
-                    design, and education, I want to create the next generation
-                    of instruments and reshape how we learn music.
-                  </p>
+                As a Machine Learning Engineer at Mathpix, I specialized in OCR and segmentation model pipelines. My work covered data handling, model training, and performance optimization. I designed synthetic data systems to improve multi-domain performance and developed automatic annotation tools that increased annotator productivity by 30%.
+                </p>
+                <p className="text-white/80 mb-6 leading-relaxed">
+                Previously, I interned as a Software Engineer at Artiphon, a modern instrument startup, where I designed MIDI communication optimizations. Before that, I interned at Gravitate AI, where I developed ML tools for customers, including an NLP matching algorithm to assign patients to providers.
+                </p>
                 </div>
                 <div>
                   <Button

@@ -79,16 +79,16 @@ export const musicProjects = [
   },
   {
     title: "Coursework",
-    summary: "Academic background in thoery and taxonomy",
+    summary: "Academic background in CS/ML",
     description:
       "A collaborative film score composition project with Baltazar Lora",
     detailedDescription: `
-    Music classes at Yale complemented my analytical engineering coursework, providing an outlet for creative exploration. After taking introductory theory courses my first year, I took nearly every course I was proficient enough to handle. Some of my favorites include Where Music Theories Collide, American Neighborhood Musics, and Gamelan Ensemble. 
-    Below is a visual score I wrote with my friend and collaborator <a href="https://open.spotify.com/artist/1OcU1uVtqF9umURdShNIwP" target="_blank" rel="noopener noreferrer" class="text-primary-500 font-medium no-underline hover:underline hover:decoration-2 hover:text-primary-400 transition-all duration-200">Baltazar Lora</a> for our composition seminar.`,
+    I graduated from Yale University with a B.S. in Computer Science in 2023. I focused my studies on the intersection of artificial intelligence and music. For my senior thesis, I built a harmonically-attentive LSTM melody generator.
+At Yale, my chosen electives demonstrate my specific interests within computer science. For Software Engineering (React, Vue, NodeJS, Firebase), I worked with a team of engineers to build a portable web application that allows users to track their friends’ commutes home with a variety of safety features, including messaging and location services. In Computational Intelligence For Games (Python), I built AlphaBot, a minimax chess engine with Alpha-beta pruning and Scout optimizations. For Algorithmic Music (Supercollider, MaxMSP), I built numerous automated and responsive musical generation tools. In Natural Language Processing (TensorFlow, Word2Vec, Keras), I designed sequence-to-sequence text models using RNNs, LSTMs, and Transformers.`,
     image: `${BASE_URL}images/theory.jpg`,
-    videoUrl: "https://www.youtube.com/embed/W0jj0Gkzsc8",
-    isYoutubeVideo: true,
-    technologies: ["Theory", "Film Scoring", "Composition"],
+    // videoUrl: "https://www.youtube.com/embed/W0jj0Gkzsc8",
+    // isYoutubeVideo: true,
+    // technologies: ["Theory", "Film Scoring", "Composition"],
   },
 ];
 

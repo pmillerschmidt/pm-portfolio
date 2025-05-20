@@ -18,7 +18,7 @@ export default function ProjectDetailPage() {
       <main className="min-h-screen pt-16 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold mb-4">Project not found</h1>
-          <Link href="/projects">
+          <Link href={`${import.meta.env.BASE_URL}projects`}>
             <Button>
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Projects
@@ -56,18 +56,11 @@ export default function ProjectDetailPage() {
               variant="outline" 
               className="mb-8 bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 transition-all duration-300"
               onClick={() => {
-                window.location.href = "/#projects";
-                // Add a small delay to ensure the navigation happens before scrolling
-                setTimeout(() => {
-                  const projectsSection = document.getElementById("projects");
-                  if (projectsSection) {
-                    projectsSection.scrollIntoView({ behavior: "smooth" });
-                  }
-                }, 100);
+                window.location.href = `${import.meta.env.BASE_URL}`;
               }}
             >
               <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Projects
+              Back to Home
             </Button>
 
             <motion.div
@@ -93,7 +86,7 @@ export default function ProjectDetailPage() {
                         View Source
                       </Button>
                     )}
-                    {(project.title === "nextChord" || project.title === "Chess Engine Design") && project.projectUrl && (
+                    {/* {(project.title === "nextChord" || project.title === "Chess Engine Design") && project.projectUrl && (
                       <Button 
                         onClick={() => window.open(project.projectUrl, '_blank')}
                         className="group bg-white/10 hover:bg-white/20 text-white border-2 border-white/20 backdrop-blur-sm transition-all duration-300"
@@ -101,7 +94,7 @@ export default function ProjectDetailPage() {
                         <ExternalLink className="w-4 h-4 mr-2 group-hover:animate-pulse" />
                         Visit Project Website
                       </Button>
-                    )}
+                    )} */}
                   </div>
                 </div>
               </div>
