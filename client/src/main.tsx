@@ -16,7 +16,7 @@ import AboutPage from "./pages/AboutPage";
 
 function App() {
   return (
-    <Router base="/pm-portfolio">
+    <Router base="/">
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/projects/:id" component={ProjectDetailPage} />

@@ -19,17 +19,17 @@ export const musicProjects = [
     originalWorks: [
       {
         title: "Tell Me a Lie (feat. Abby Walker)",
-        url: "/audio/Tell Me a Lie.mp3",
+        url: `${BASE_URL}audio/Tell Me a Lie.mp3`,
         year: "2022",
       },
       {
         title: "Something (feat. Abby Walker)",
-        url: "/audio/something.mp3",
+        url: `${BASE_URL}audio/something.mp3`,
         year: "2023",
       },
       {
         title: "Afterlife (feat. Abby Walker)",
-        url: "/audio/afterlife.mp3",
+        url: `${BASE_URL}audio/afterlife.mp3`,
         year: "2023",
       },
     ],
@@ -37,18 +37,18 @@ export const musicProjects = [
       {
         title: "Rasputin (Boney M.) remix",
         originalArtist: "Steve Reich",
-        url: "/audio/Rasputin (five trees remix).mp3",
+        url: `${BASE_URL}audio/Rasputin (five trees remix).mp3`,
         year: "2023",
       },
       {
         title: "Smalltown Boy (Bronski Beat) remix",
         originalArtist: "J.S. Bach",
-        url: "/audio/PMS_Stimulation.mp3",
+        url: `${BASE_URL}audio/PMS_Stimulation.mp3`,
         year: "2024",
       },
     ],
     performanceImage: {
-      url: "/images/dj-performance.png",
+      url: `${BASE_URL}images/dj-performance.png`,
       caption:
         "DJ set (left), Toad's Place backing up PJ Frantz (upper right), student music festival with Abby Walker (bottom right)",
     },
@@ -64,14 +64,14 @@ export const musicProjects = [
     originalWorks: [
       {
         title: "Hidden Markov Model Generation",
-        url: "/audio/markov-song.mp3",
+        url: `${BASE_URL}audio/markov-song.mp3`,
         description:
           "Melody and drum patterns generated using Hidden Markov Models",
         year: "2023",
       },
       {
         title: "Mealy Machine Generation",
-        url: "/audio/mealy-song.mp3",
+        url: `${BASE_URL}audio/mealy-song.mp3`,
         description: "Melody and drum patterns generated using Mealy Machines",
         year: "2023",
       },
@@ -84,7 +84,7 @@ export const musicProjects = [
       "A collaborative film score composition project with Baltazar Lora",
     detailedDescription: `
     I graduated from Yale University with a B.S. in Computer Science in 2023. I focused my studies on the intersection of artificial intelligence and music. For my senior thesis, I built a harmonically-attentive LSTM melody generator.
-At Yale, my chosen electives demonstrate my specific interests within computer science. For Software Engineering (React, Vue, NodeJS, Firebase), I worked with a team of engineers to build a portable web application that allows users to track their friends’ commutes home with a variety of safety features, including messaging and location services. In Computational Intelligence For Games (Python), I built AlphaBot, a minimax chess engine with Alpha-beta pruning and Scout optimizations. For Algorithmic Music (Supercollider, MaxMSP), I built numerous automated and responsive musical generation tools. In Natural Language Processing (TensorFlow, Word2Vec, Keras), I designed sequence-to-sequence text models using RNNs, LSTMs, and Transformers.`,
+At Yale, my chosen electives demonstrate my specific interests within computer science. For Software Engineering (React, Vue, NodeJS, Firebase), I worked with a team of engineers to build a portable web application that allows users to track their friends' commutes home with a variety of safety features, including messaging and location services. In Computational Intelligence For Games (Python), I built AlphaBot, a minimax chess engine with Alpha-beta pruning and Scout optimizations. For Algorithmic Music (Supercollider, MaxMSP), I built numerous automated and responsive musical generation tools. In Natural Language Processing (TensorFlow, Word2Vec, Keras), I designed sequence-to-sequence text models using RNNs, LSTMs, and Transformers.`,
     image: `${BASE_URL}images/theory.jpg`,
     // videoUrl: "https://www.youtube.com/embed/W0jj0Gkzsc8",
     // isYoutubeVideo: true,
@@ -145,7 +145,7 @@ export const projects = [
 Music generation with machine learning poses unique challenges due to the high dimensionality of audio data and the complex temporal and hierarchical structures inherent in music. MelGen, an AI-powered MIDI generator, addresses these challenges by generating melodies based on harmonic structures. Trained on the Rock Corpus Dataset—comprising harmonic analyses and melodic transcriptions of 20th-century songs—the model uses an LSTM architecture with a single LSTM layer, dropout, and a softmax classifier. Training spanned 50 epochs with a learning rate of 0.001 and a sparse categorical cross-entropy loss function. Despite these efforts, the model initially produced melodies with inconsistencies, such as prolonged notes caused by overestimated continuation probabilities. To mitigate this, continuation reduction was implemented to balance note lengths, resulting in more coherent outputs. Users can interact with MelGen by providing a MIDI file of chords and a seed melody, which the model builds upon to generate new melodies. The project's codebase includes tools for data preprocessing, training, and melody generation, highlighting its end-to-end approach to addressing the complexities of music generation.
 <div>
   <p class="mb-2"><strong>MelGen Output</strong></p>
-  <audio controls src="/audio/melgen-demo.mp3" class="w-full"></audio>
+  <audio controls src="${BASE_URL}audio/melgen-demo.mp3" class="w-full"></audio>
 </div>
     `,
     features: [
@@ -178,15 +178,15 @@ Music generation with machine learning poses unique challenges due to the high d
       <div class="space-y-4">
         <div>
           <p class="mb-2"><strong>CSMG-Avicii-{4,7,3,12,0}</strong></p>
-          <audio controls src="/audio/artiphon/CSMG-Avicii-{4,7,3,12,0}.mp3" class="w-full"></audio>
+          <audio controls src="${BASE_URL}audio/artiphon/CSMG-Avicii-{4,7,3,12,0}.mp3" class="w-full"></audio>
         </div>
         <div>
           <p class="mb-2"><strong>CSMG-Avicii-{5, 6, 8, 8, 0.1}</strong></p>
-          <audio controls src="/audio/artiphon/CSMG-Avicii-{5, 6, 8, 8, 0.1}.mp3" class="w-full"></audio>
+          <audio controls src="${BASE_URL}audio/artiphon/CSMG-Avicii-{5, 6, 8, 8, 0.1}.mp3" class="w-full"></audio>
         </div>
         <div>
           <p class="mb-2"><strong>CSMG-Avicii-{10,4,15,15,0.6}</strong></p>
-          <audio controls src="/audio/artiphon/CSMG-Avicii-{10,4,15,15,0.6}.mp3" class="w-full"></audio>
+          <audio controls src="${BASE_URL}audio/artiphon/CSMG-Avicii-{10,4,15,15,0.6}.mp3" class="w-full"></audio>
         </div>
       </div>
     `,
@@ -248,12 +248,12 @@ Music generation with machine learning poses unique challenges due to the high d
     </p>
     <div>
       <p class="mb-2"><strong>Qtar Pretrained Output</strong></p>
-      <audio controls src="/audio/qtar-pretrained.mp3" class="w-full"></audio>
+      <audio controls src="${BASE_URL}audio/qtar-pretrained.mp3" class="w-full"></audio>
     </div>
 
     <div>
-      <p class="mb-2"><strong>Qtar Trained Output (with Human Feedback)</strong></p>
-      <audio controls src="/audio/qtar-trained.mp3" class="w-full"></audio>
+      <p class="mb-2"><strong>Qtar Fine-tuned Output</strong></p>
+      <audio controls src="${BASE_URL}audio/qtar-trained.mp3" class="w-full"></audio>
     </div>
     
     `,
@@ -276,8 +276,8 @@ Music generation with machine learning poses unique challenges due to the high d
       nextChord/ChordCompass is a chord progression neural network trained on the <a href="https://paperswithcode.com/dataset/niko-chord-progression-dataset#:~:text=The%20Niko%20Chord%20Progression%20Dataset%20is%20used%20in%20AccoMontage2.,have%20an%20'Unknown'%20style.)" target="_blank" rel="noopener noreferrer" class="text-primary-500 font-medium no-underline hover:underline hover:decoration-2 hover:text-primary-400 transition-all duration-200">Niko Chord Progression Dataset</a> which contains 5k+ chord progressions. It pre-processes progressions into sequences of roman numerals, and then uses a LSTM to predict the next chord in the sequence. The temperature parameter controls the amount of randomness in the prediction. I built a web interface and API to inference the model. The next steps of this project are to integrate a more diverse dataset with complex progressions and a larger vocabulary of chords to predict.
 
       <div>
-        <p class="mb-2"><strong>nextChord Output</strong></p>
-        <audio controls src="/audio/nextchord-demo.mp3" class="w-full"></audio>
+        <p class="mb-2"><strong>NextChord Demo</strong></p>
+        <audio controls src="${BASE_URL}audio/nextchord-demo.mp3" class="w-full"></audio>
       </div>
 
     

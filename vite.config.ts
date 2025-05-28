@@ -21,7 +21,7 @@ export default defineConfig({
       "@db": path.resolve(__dirname, "db"),
     },
   },
-  base: '/pm-portfolio/',
+  base: '/',
   root: path.resolve(__dirname, "client"),
   build: {
     outDir: path.resolve(__dirname, "dist"),

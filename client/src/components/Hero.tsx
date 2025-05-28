@@ -53,7 +53,7 @@ export function Hero() {
           </span>
         </h1>
         <p className="text-xl md:text-2xl lg:text-3xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed font-light">
-        Musician | Software Engineer | Educator
+        Musician | ML Engineer | Educator
         </p>
         <div className="flex justify-center">
           <Button
