@@ -260,29 +260,48 @@ Music generation with machine learning poses unique challenges due to the high d
     features: ["Reinforcement Learning", "Human Feedback", "Web interface"],
   },
   {
-    title: "nextChord",
-    description: "Chord progression neural network",
-    image: `${BASE_URL}images/next-chord.png`,
-    technologies: ["PyTorch", "Long Short-Term Memory", "React"],
+    title: "Timbral Classifier",
+    description: "Instrument classification using CNNs",
+    image: `${BASE_URL}images/mel.jpg`,
+    technologies: ["PyTorch", "CNNs", "Audio Processing"],
     demoUrl: "https://pmillerschmidt.github.io/ChordCompass/",
     projectUrl: "https://pmillerschmidt.github.io/ChordCompass/",
     isExternalDemo: true,
-    githubUrl: "https://github.com/pmillerschmidt/ChordCompass",
+    githubUrl: "https://github.com/pmillerschmidt/goodsounds_classifier",
     liveDemo: true,
-    videoUrl: "https://www.youtube.com/embed/F9KaOG3SCbU",
+    videoUrl: "https://www.youtube.com/watch?v=0VXHhmJZo3g",
     isYoutubeVideo: true,
     embedDemo: false,
     detailedDescription: `
-      nextChord/ChordCompass is a chord progression neural network trained on the <a href="https://paperswithcode.com/dataset/niko-chord-progression-dataset#:~:text=The%20Niko%20Chord%20Progression%20Dataset%20is%20used%20in%20AccoMontage2.,have%20an%20'Unknown'%20style.)" target="_blank" rel="noopener noreferrer" class="text-primary-500 font-medium no-underline hover:underline hover:decoration-2 hover:text-primary-400 transition-all duration-200">Niko Chord Progression Dataset</a> which contains 5k+ chord progressions. It pre-processes progressions into sequences of roman numerals, and then uses a LSTM to predict the next chord in the sequence. The temperature parameter controls the amount of randomness in the prediction. I built a web interface and API to inference the model. The next steps of this project are to integrate a more diverse dataset with complex progressions and a larger vocabulary of chords to predict.
+      <p class="mb-6">
+        <strong>
+          Instrument Classification Using CNNs on the Good-Sounds Dataset
+        </strong>
+      </p>
+This project investigates instrument classification using thousands of one-shot audio samples across 9 classes from the Good-Sounds dataset. I preprocess raw audio into mel-spectrograms, FFTs, and temporal derivatives (delta mels), exploring their effectiveness as inputs to various CNN architectures.
 
-      <div>
-        <p class="mb-2"><strong>NextChord Demo</strong></p>
-        <audio controls src="${BASE_URL}audio/nextchord-demo.mp3" class="w-full"></audio>
-      </div>
+I conducted a series of model experiments:
 
-    
-    `,
-    features: ["AI chord generation", "API Design", "Web Audio Processing"],
+- Baseline CNN over mel-spectrograms achieved strong performance (Train: 95.90%, Val: 97.47%).
+
+- CNN with mel + FFT features underperformed due to overlapping feature space (Train: 79.46%, Val: 91.59%).
+
+- CNN on OpenL3 audio embeddings showed poor generalization (~20% accuracy), indicating the need for more complex models or multimodal pathways.
+
+- CNN with mel + delta mel added temporal context and maintained high accuracy (Train: 95.31%, Val: 96.65%).
+
+- Deeper CNN with data augmentation (results pending) is being explored to improve robustness and regularization.
+    <div>
+        <img src="/images/timbral-classifier.png" alt="Design" class="w-full rounded-lg shadow-lg mb-2" />
+        <p class="text-sm text-white/60 text-center">Experimental results</p>
+    </div>
+    <div>
+        <img src="/images/timbral-classifier-umap.png" alt="Design" class="w-full rounded-lg shadow-lg mb-2" />
+        <p class="text-sm text-white/60 text-center">Feature space visualization</p>
+    </div>
+
+`,
+    features: ["CNNs", "Mel-spectrograms", "Feature Space Visualization"],
   },
   {
     title: "Chess Engine Design",
